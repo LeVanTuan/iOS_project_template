@@ -1,4 +1,4 @@
-# iOS_project_template
+# Template iOS Project
 
 This is a template iOS project
 
