@@ -3,7 +3,7 @@
 This is a template iOS project
 
 Technical: 
-  + MVVM 
+  + Model - View - ViewModel 
   + RxSwift
   + Object Oriented Programming
   + Protocol Oriented Programming
