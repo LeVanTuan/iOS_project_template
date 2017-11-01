@@ -7,7 +7,8 @@ Technical:
   + RxSwift
   + Object Oriented Programming
   + Protocol Oriented Programming
-  
+
+Libs:
   + Google Maps
   + Google Places
   + Alamofire
