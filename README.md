@@ -8,3 +8,9 @@ Technical:
   + Object Oriented Programming
   + Protocol Oriented Programming
   
+  + Google Maps
+  + Google Places
+  + Alamofire
+  + ObjectMapper
+  
+  
