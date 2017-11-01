@@ -7,3 +7,17 @@
 //
 
 import Foundation
+import ObjectMapper
+
+class APIBasicOutput:  Mappable {
+    
+    var error: APIError?
+    
+    required init?(map: Map) {
+        
+    }
+    
+    func mapping(map: Map) {
+        error <- map["error"]
+    }
+}

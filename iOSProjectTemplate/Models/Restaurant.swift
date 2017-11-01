@@ -1,5 +1,5 @@
 //
-//  AppUtility.swift
+//  Restaurant.swift
 //  iOSProjectTemplate
 //
 //  Created by Tuan LE on 11/1/17.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct AppUtility {
+class Restaurant {
     
 }
