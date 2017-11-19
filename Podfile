@@ -12,6 +12,7 @@
   pod 'GooglePlaces'
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'RxAlamofire'
 
 
   target 'iOSProjectTemplateTests' do

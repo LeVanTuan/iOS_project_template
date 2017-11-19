@@ -9,5 +9,9 @@
 import Foundation
 
 struct AppUtility {
+    struct AppKeys {
+        static let accessToken = "accessToken"
+    }
+    
     
 }

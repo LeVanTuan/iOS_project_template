@@ -9,7 +9,28 @@
 import Foundation
 import ObjectMapper
 
-enum APIErrorKey: String {
+enum APIError: Error {
+    
+    case unknown(statusCode: Int)
+    case invalidData(data: JSONDictionary)
+    case serverError(error: YelpError)
+    case noStatusCode
+    
+    var description: String {
+        switch self {
+        case .unknown(let code):
+            return "Unkown \(code)"
+        case .invalidData(_):
+            return "Invalid response data"
+        case .serverError(let error):
+            return error.text
+        default:
+            return String(describing: self)
+        }
+    }
+}
+
+enum YelpErrorKey: String {
     case internalError = "INTERNAL_ERROR"
     case exceededReqs = "EXCEEDED_REQS"
     case missingParameter = "MISSING_PARAMETER"
@@ -25,17 +46,21 @@ enum APIErrorKey: String {
     case multipleLocations = "MULTIPLE_LOCATIONS"
     case businessUnavailable = "BUSINESS_UNAVAILABLE"
     
-    case invalidData = "INVALID_DATA"
+
 }
 
-class APIError: Error, Mappable {
+class YelpError: NSObject, Mappable {
     
-    var id: APIErrorKey = .invalidData
+    var id: YelpErrorKey = .internalError
     var text: String = ""
     var field: String = ""
     
-    init() {
+    override init() {
         
+    }
+    
+    init(id: YelpErrorKey) {
+        self.id = id
     }
     
     required init?(map: Map) {
@@ -47,6 +72,6 @@ class APIError: Error, Mappable {
         text <- map["text"]
         field <- map["field"]
     }
-    
-    
 }
+
+

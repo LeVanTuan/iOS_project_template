@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		171E3EEF1FC1233B00F6E53C /* AppSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171E3EEE1FC1233B00F6E53C /* AppSession.swift */; };
 		458CDA94A76E53E5C9A832E3 /* Pods_iOSProjectTemplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 739132ECB17195C263A6CA03 /* Pods_iOSProjectTemplateTests.framework */; };
 		461A097A88CE3BDA6D7DFD8B /* Pods_iOSProjectTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53EC6AA32DF5BC6CA8D5E2C /* Pods_iOSProjectTemplate.framework */; };
 		AF210F211FA85BA200E576F6 /* iOSProjectTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF210F201FA85BA200E576F6 /* iOSProjectTemplateTests.swift */; };
@@ -54,6 +55,7 @@
 
 /* Begin PBXFileReference section */
 		16960F8E07E523D566ACF0E6 /* Pods-iOSProjectTemplateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSProjectTemplateUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSProjectTemplateUITests/Pods-iOSProjectTemplateUITests.release.xcconfig"; sourceTree = "<group>"; };
+		171E3EEE1FC1233B00F6E53C /* AppSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSession.swift; sourceTree = "<group>"; };
 		18BD9BC389024FA86B0644A9 /* Pods-iOSProjectTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSProjectTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSProjectTemplate/Pods-iOSProjectTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		739132ECB17195C263A6CA03 /* Pods_iOSProjectTemplateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSProjectTemplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A09C9A638ED13476FEF8340C /* Pods-iOSProjectTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSProjectTemplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSProjectTemplate/Pods-iOSProjectTemplate.release.xcconfig"; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				AF8758F31FA9B7EE001DB69D /* AppUtility.swift */,
+				171E3EEE1FC1233B00F6E53C /* AppSession.swift */,
 			);
 			path = AppUtility;
 			sourceTree = "<group>";
@@ -635,6 +638,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				171E3EEF1FC1233B00F6E53C /* AppSession.swift in Sources */,
 				AF8758F41FA9B7EE001DB69D /* AppUtility.swift in Sources */,
 				AF8758EE1FA979CA001DB69D /* APIBasicOutput.swift in Sources */,
 				AF8758EA1FA9792D001DB69D /* APIServices.swift in Sources */,

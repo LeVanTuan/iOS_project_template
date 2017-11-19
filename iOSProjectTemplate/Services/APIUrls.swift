@@ -9,7 +9,9 @@
 import Foundation
 
 struct APIUrl {
-    //
-    static let
+    private static let endPoint = "http://yelp.com"
+    private static let apiVersion = "/api/v1"
+    //Restaurant
+    static let getRestaurant = endPoint + apiVersion + "/restaurants"
     
 }
