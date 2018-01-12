@@ -12,7 +12,7 @@ import ObjectMapper
 import RxSwift
 import RxAlamofire
 
-typealias JSONDictionary = [String: Any]
+typealias JSONDictionary = [String:Any]
 
 class APIServices {
     func request<T: Mappable>(_ input: APIBasicInput) -> Observable<T> {
@@ -63,6 +63,7 @@ class APIServices {
         switch response.result {
         case .success(let value):
             if let statusCode = response.response?.statusCode {
+                
                 switch statusCode {
                 case 200..<300:
                     if let resultData = value as? JSONDictionary {
@@ -70,16 +71,20 @@ class APIServices {
                     } else {
                         return JSONDictionary()
                     }
+                    
                 default:
-                    if let map = value as? Mappable, let error = YelpError(JSON: map) {
-                        error =
+                    if let valueJson = value as? JSONDictionary,
+                        let serverError = ServerError(JSON: valueJson) {
+                        error = APIError.serverError(error: serverError)
                     } else {
-                        
+                        error = APIError.unknown(statusCode: statusCode)
                     }
                 }
+                
             } else {
                 error = APIError.noStatusCode
             }
+            
         case .failure(let value):
             error = value
         }

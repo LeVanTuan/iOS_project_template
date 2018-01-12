@@ -1,14 +1,14 @@
 //
-//  MainViewController.swift
+//  PopularViewController.swift
 //  iOSProjectTemplate
 //
-//  Created by Tuan LE on 11/1/17.
-//  Copyright © 2017 Leo LE. All rights reserved.
+//  Created by Tuan LE on 1/12/18.
+//  Copyright © 2018 Leo LE. All rights reserved.
 //
 
 import UIKit
 
-class MainViewController: UIViewController {
+class PopularViewController: ListMoviesViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

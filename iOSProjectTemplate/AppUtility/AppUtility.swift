@@ -13,5 +13,11 @@ struct AppUtility {
         static let accessToken = "accessToken"
     }
     
+    struct NotificationName {
+        static let reloadNowPlayingMovies = "kReloadNowPlayingMovies"
+        static let reloadPopularMovies = "kReloadPopularMovies"
+        static let reloadTopRatedMovies = "kReloadTopRatedMovies"
+        static let reloadUpcomingMovies = "kReloadUpcomingMovies"
+    }
     
 }
